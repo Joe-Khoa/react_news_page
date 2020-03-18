@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route,} from "react-router-dom";
+import { BrowserRouter as HashRouter , Route,} from "react-router-dom";
 
 import Home from '../Components/Home';
 import News from '../Components/News';
@@ -18,7 +18,7 @@ class URLnavigate extends Component {
                     <Route exact path="/news" component={News} />
                     <Route exact path="/detail-news/:slug.:id.html" component={DetailNews} />
                     <Route exact path="/contact" component={Contact} />
-                    <Router></Router>
+                    <HashRouter ></HashRouter >
                     {/* Router_NO_USE_just_for_clear_alert */}
 
           </div>
